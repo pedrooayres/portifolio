@@ -4,7 +4,7 @@ export default function Home() {
       {/* HERO */}
       <section className="flex flex-col items-center justify-center text-center px-6 py-32">
         <h1 className="text-4xl md:text-6xl font-bold">
-          Olá, eu sou <span className="text-blue-500">Pedro Ayres</span>
+          Olá, eu sou <span className="text-blue-500">Pedro Henrique Ayres</span>
         </h1>
 
         <p className="mt-6 max-w-2xl text-gray-400 text-lg">
