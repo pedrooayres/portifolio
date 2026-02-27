@@ -18,29 +18,70 @@
     --foreground: #ededed;
   }
 }
+:root {
+  --bg-dark: #0b0f0c;
+  --neon-green: #9dff00;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+}
+
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-  background: radial-gradient(
+  min-height: 100vh;
+  background:
+    radial-gradient(
       circle at top left,
-      rgba(0, 0, 5, 0.15),
+      rgba(157, 255, 0, 0.08),
       transparent 40%
     ),
     radial-gradient(
       circle at bottom right,
-      rgba(236, 72, 153, 0.15),
-      transparent 40%
+      rgba(157, 255, 0, 0.05),
+      transparent 45%
     ),
-    #0f172a;
+    var(--bg-dark);
+    color: var(--text-main);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
 
-  color: #e5e7eb;
+    .highlight {
+  color: var(--bg-dark);
+  background: var(--neon-green);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  }
 }
 section {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(6px);
+  background: rgba(15, 20, 17, 0.85);
+  border: 1px solid rgba(157, 255, 0, 0.25);
   border-radius: 16px;
-  margin: 40px;
+
   padding: 40px;
+  margin: 40px;
+
+  box-shadow:
+    0 0 0 1px rgba(157, 255, 0, 0.1),
+    0 0 40px rgba(157, 255, 0, 0.05);
+}
+.button-neon {
+  background: transparent;
+  color: var(--neon-green);
+
+  border: 1px solid var(--neon-green);
+  border-radius: 10px;
+
+  padding: 14px 24px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.button-neon:hover {
+  background: var(--neon-green);
+  color: var(--bg-dark);
+
+  box-shadow: 0 0 25px rgba(157, 255, 0, 0.5);
 }
