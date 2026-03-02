@@ -24,7 +24,6 @@
   --text-main: #e5e7eb;
   --text-muted: #9ca3af;
 }
-
 body {
   margin: 0;
   min-height: 100vh;
@@ -44,13 +43,14 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
-
     .highlight {
   color: var(--bg-dark);
   background: var(--neon-green);
   padding: 2px 6px;
   border-radius: 4px;
   font-weight: 600;
+  font-size: 18px; /* padrão bom */
+  line-height: 1.6;
   }
 }
 section {
