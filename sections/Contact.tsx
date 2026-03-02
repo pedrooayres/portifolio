@@ -3,6 +3,8 @@ export default function Contact() {
     <section id="contato" style={{ padding: 20 }}>
       <h2>Contato</h2>
       <p>Email: pedrohayres11@gmail.com</p>
+      <a>LinkedIn: https://www.linkedin.com/in/pedro-henrique-ayres-563145246/</a>
+      <a>GitHub : https://github.com/pedro-hma?tab=repositories</a>
     </section>
   )
 }

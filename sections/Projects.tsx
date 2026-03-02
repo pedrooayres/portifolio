@@ -5,7 +5,7 @@ const projects = [
     title: 'Prontuário Psicológico',
     description:
       'Sistema para gerenciamento de prontuários psicológicos.',
-    technologies: ['Java', 'POO'],
+    technologies: ['React', 'HTML','JavaScript','Vite','CSS', 'TypeScricpt'],
     githubUrl: 'https://github.com/pedro-hma/prontuario-psicologico',
   },
   {
